@@ -1,17 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
+
 import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineRestaurantMenu } from "react-icons/md"
 import images from "../../constants/images"
 import "./Navbar.css"
+import ME from "../../assets/profile.png"
+import { AiOutlineHome, AiOutlineUser } from "react-icons/ai"
+import { BiBook, BiMessageSquareDetail } from "react-icons/bi"
+import { RiServiceLine } from "react-icons/ri"
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false)
+  const [activeNav, setActiveNav] = useState("#")
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.gericht} alt="app__logo" />
+        <img src={ME} alt="app__logo" />
       </div>
-      <ul className="app__navbar-links">
+      {/* <ul className="app__navbar-links">
         <li className="p__opensans">
           <a href="#home">Home</a>
         </li>
@@ -27,8 +33,8 @@ const Navbar = () => {
         <li className="p__opensans">
           <a href="#contact">Contact</a>
         </li>
-      </ul>
-      <div className="app__navbar-login">
+      </ul> */}
+      {/* <div className="app__navbar-login">
         <a href="#login" className="p__opensans">
           Log In / Registration
         </a>
@@ -36,7 +42,54 @@ const Navbar = () => {
         <a href="/" className="p__opensans">
           Book Table
         </a>
-      </div>
+      </div> */}
+      <nav>
+        <a
+          href="#"
+          onClick={() => {
+            setActiveNav("#")
+          }}
+          className={activeNav === "#" ? "active" : ""}
+        >
+          <AiOutlineHome />
+        </a>
+        <a
+          href="#about"
+          onClick={() => {
+            setActiveNav("#about")
+          }}
+          className={activeNav === "#about" ? "active" : ""}
+        >
+          <AiOutlineUser />
+        </a>
+        <a
+          href="#experience"
+          onClick={() => {
+            setActiveNav("#experience")
+          }}
+          className={activeNav === "#experience" ? "active" : ""}
+        >
+          <BiBook />
+        </a>
+        <a
+          href="#services"
+          onClick={() => {
+            setActiveNav("#services")
+          }}
+          className={activeNav === "#services" ? "active" : ""}
+        >
+          <RiServiceLine />
+        </a>
+        <a
+          href="#contact"
+          onClick={() => {
+            setActiveNav("#contact")
+          }}
+          className={activeNav === "#contact" ? "active" : ""}
+        >
+          <BiMessageSquareDetail />
+        </a>
+      </nav>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu
           color="#fff"

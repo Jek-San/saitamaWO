@@ -1,3 +1,10 @@
+.section__gallery {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: var(--color-black);
+}
+
 .app__gallery {
     flex-direction: row;
 
@@ -34,7 +41,7 @@
     width: max-content;
     overflow-x: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none;  
+    scrollbar-width: none;
 }
 
 .app__gallery-images_container::-webkit-scrollbar {
@@ -132,8 +139,8 @@
 @media screen and (max-width: 650px) {
     .app__gallery {
         padding: 4rem 0 4rem 2rem;
-    }  
-    
+    }
+
     .app__gallery-content {
         min-width: 100%;
     }

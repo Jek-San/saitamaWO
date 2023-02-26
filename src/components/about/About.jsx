@@ -1,4 +1,5 @@
 import React from "react"
+
 import "./about.css"
 import ME from "../../assets/profile.png"
 import { FaAward } from "react-icons/fa"
@@ -14,7 +15,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} alt="About Image" className="img-about" />
           </div>
         </div>
         <div className="about__content">
@@ -23,16 +24,6 @@ const About = () => {
               <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>Still Looking For Experience</small>
-            </article>
-            <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Client</h5>
-              <small>Still dont have 😥</small>
-            </article>
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>5 Project Completes</small>
             </article>
           </div>
           <p>

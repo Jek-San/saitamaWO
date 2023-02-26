@@ -10,17 +10,21 @@ import Testimoni from "./components/testimoni/Testimoni"
 import Footer from "./components/footer/Footer"
 import Navbar from "./components/Navbar/Navbar"
 import Gallery from "./components/Gallery/Gallery"
+import Gal from "./components/Gal/Gal"
+import Profile from "./components/Profile/Profile"
 
 const App = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
+      {/* <Gal /> */}
+      <Profile />
       <About />
       <Header />
-      <Nav />
+      {/* <Nav /> */}
       {/* <Experience /> */}
-      <Services />
       <Gallery />
+      <Services />
       <Portfolio />
       <Testimoni />
       <Contact />

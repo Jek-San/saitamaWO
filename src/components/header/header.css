@@ -40,6 +40,13 @@ header {
 
 
 /* ============ME================ */
+.img-header {
+
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+}
 
 .me {
   background: linear-gradient(var(--color-primary), transparent);
@@ -48,9 +55,9 @@ header {
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 3rem;
-  border-radius: 12rem 12rem 0 0;
+  border-radius: 15rem 15rem 0 0;
   overflow: hidden;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 
 /* ============Scroldown================ */

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -12,6 +13,8 @@
 }
 
 :root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
   --color-bg: #411a1a;
   --color-bg-variant: #963b3b;
   --color-primary: #eb5c5c;
@@ -22,6 +25,12 @@
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --transition: all 400ms ease;
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
   ;
 }
 
@@ -65,7 +74,11 @@ h1 {
 section {
   margin-top: 8rem;
 
+
+
 }
+
+
 
 section>h2,
 section>h5 {
@@ -113,11 +126,11 @@ a:hover {
   color: var(--color-bg);
 }
 
-img {
+/* img {
   display: block;
   width: 100%;
   object-fit: cover;
-}
+} */
 
 /* ==================MEDIA QUERIES (MEDIUM DEVICES ============ */
 @media screen and (max-width: 1024px) {

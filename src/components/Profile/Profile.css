@@ -1,0 +1,32 @@
+.app__profile {
+  left: 0;
+  margin-top: 8rem;
+  background-color: #e5ba9d;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 60% 1fr;
+
+  overflow: hidden;
+}
+
+
+.profile_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  object-fit: contain;
+  grid-column: 2/ 3;
+  overflow: hidden;
+  gap: 2rem;
+
+}
+
+.item_image {
+
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+
+
+}

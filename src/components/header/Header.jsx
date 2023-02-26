@@ -1,8 +1,9 @@
 import React from "react"
 import CTA from "./CTA"
 import "./header.css"
-import ME from "../../assets/me.png"
-// import ME from "../../assets/profile.png"
+// import ME from "../../assets/me.png"
+import ME from "../../assets/profile.png"
+import US from "../../assets/imgheader.JPEG"
 import HeaderSocial from "./HeaderSocial"
 
 const Header = () => {
@@ -14,8 +15,8 @@ const Header = () => {
         <h5 className="text-light">SPESIALIS PERNIKAHAN ADAT BATAK</h5>
         <CTA />
         <HeaderSocial />
-        <div className="me">
-          <img src={ME} alt="me" />
+        <div className=" me">
+          <img src={US} alt="me" className="img-profile" />
         </div>
         <a href="#contact" className="scroll__down">
           Scroll Down

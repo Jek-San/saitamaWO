@@ -1,7 +1,10 @@
+import img1 from '../assets/photos/img1.jpg';
+import img2 from '../assets/photos/img2.jpg';
+import img3 from '../assets/photos/img3.jpg';
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
 import G from '../assets/G.png';
-import gallery01 from '../assets/gallery01.png';
+import gallery01 from '../assets/gallery01.jpg';
 import gallery02 from '../assets/gallery02.png';
 import gallery03 from '../assets/gallery03.png';
 import gallery04 from '../assets/gallery04.png';
@@ -22,6 +25,9 @@ import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 
 export default {
+  img1,
+  img2,
+  img3,
   bg,
   chef,
   G,

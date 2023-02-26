@@ -8,6 +8,11 @@ import {
 import { SubHeading } from "../SubHeading/SubHeading"
 import { images } from "../../constants"
 import "./Gallery.css"
+import img from "../../assets/avatar1.jpg"
+import img2 from "../../assets/avatar2.jpg"
+import img3 from "../../assets/avatar3.jpg"
+
+import Carousel from "react-bootstrap/Carousel"
 
 const Gallery = () => {
   const scrollRef = React.useRef(null)
@@ -23,50 +28,43 @@ const Gallery = () => {
   }
 
   return (
-    <div className="app__gallery flex__center">
-      <div className="app__gallery-content">
-        <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">Photo Gallery</h1>
-        <p
-          className="p__opensans"
-          style={{ color: "#AAAAAA", marginTop: "2rem" }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-          mattis ipsum turpis elit elit scelerisque egestas mu.
-        </p>
-        <button type="button" className="custom__button">
-          View More
-        </button>
-      </div>
-      <div className="app__gallery-images">
-        <div className="app__gallery-images_container" ref={scrollRef}>
-          {[
-            images.gallery01,
-            images.gallery02,
-            images.gallery03,
-            images.gallery04,
-          ].map((image, index) => (
-            <div
-              className="app__gallery-images_card flex__center"
-              key={`gallery_image-${index + 1}`}
-            >
-              <img src={image} alt="gallery_image" />
-              <BsInstagram className="gallery__image-icon" />
-            </div>
-          ))}
+    <section className="section__gallery">
+      <div className="app__gallery flex__center">
+        <div style={{ marginBottom: "1rem" }}>
+          <p className="p__cormorant">Lorem ipsum dolor sit amet.</p>
+          <img src={img} alt="spoon_image" className="spoon__img" />
         </div>
-        <div className="app__gallery-images_arrows">
-          <BsArrowLeftShort
-            className="gallery__arrow-icon"
-            onClick={() => scroll("left")}
-          />
-          <BsArrowRightShort
-            className="gallery__arrow-icon"
-            onClick={() => scroll("right")}
-          />
+        <div className="app__gallery-images">
+          <div className="app__gallery-images_container" ref={scrollRef}>
+            {[
+              images.gallery01,
+              images.gallery02,
+              images.gallery03,
+              images.gallery04,
+            ].map((image, index) => (
+              <div
+                className="app__gallery-images_card flex__center"
+                key={`gallery_image-${index + 1}`}
+              >
+                <img src={image} alt="gallery_image" />
+                <BsInstagram className="gallery__image-icon" />
+              </div>
+            ))}
+          </div>
+
+          <div className="app__gallery-images_arrows">
+            <BsArrowLeftShort
+              className="gallery__arrow-icon"
+              onClick={() => scroll("left")}
+            />
+            <BsArrowRightShort
+              className="gallery__arrow-icon"
+              onClick={() => scroll("right")}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
