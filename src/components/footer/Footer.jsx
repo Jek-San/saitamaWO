@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer id="footer">
       <a href="#" className="footer__logo">
-        IHSANZACK
+        SAITAMA WEDDING
       </a>
       <ul className="permalinks">
         <li>
@@ -28,7 +28,7 @@ const Footer = () => {
         <a href="https://facebook.com">
           <FiFacebook />
         </a>
-        <a href="https://instagram.com">
+        <a href="https://instagram.com/saitamawedding">
           <FiInstagram />
         </a>
         <a href="https://twitter.com">
@@ -36,7 +36,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; Ihsan Website Profil. All rights reserved</small>
+        <small>&copy;Saitama Website Profil. All rights reserved</small>
       </div>
     </footer>
   )

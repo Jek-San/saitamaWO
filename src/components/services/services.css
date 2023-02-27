@@ -5,10 +5,15 @@
 
 }
 
+.services h5 {
+  color: #5b4a42;
+
+}
+
 .service {
-  background: var(--color-bg-variant);
+  background: #f3eeeb;
   border-radius: 0 0 2rem 2rem;
-  border: 1px solid var(--color-primary);
+  border: 1px solid #5b4a42;
   height: fit-content;
   transition: var(--transition);
   margin-bottom: 2rem;
@@ -21,15 +26,15 @@
 }
 
 .service__head {
-  background: var(--color-primary);
+  background: #eebba3;
   padding: 2rem;
   border-radius: 0 0 2rem 2rem;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .service__head h3 {
-  color: var(--color-bg);
-  font-size: 1rem;
+  color: #5b4a42;
+  font-size: 2rem;
   text-align: center;
 
 }
@@ -46,12 +51,13 @@
 
 .service__list-icon {
   font-size: 0.9rem;
-  color: var(--color-primary);
+  color: #5b4a42;
   margin-top: 2px;
 }
 
 .service__list p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  color: #5b4a42;
 }
 
 @media screen and (max-width: 1024px) {

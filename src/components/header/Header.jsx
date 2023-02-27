@@ -4,6 +4,7 @@ import "./header.css"
 // import ME from "../../assets/me.png"
 import ME from "../../assets/profile.png"
 import US from "../../assets/imgheader.JPEG"
+import img from "../../assets/photos/img8.JPEG"
 import HeaderSocial from "./HeaderSocial"
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
         <CTA />
         <HeaderSocial />
         <div className=" me">
-          <img src={US} alt="me" className="img-profile" />
+          <img src={img} alt="me" className="img-header" />
         </div>
         <a href="#contact" className="scroll__down">
           Scroll Down

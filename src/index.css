@@ -8,7 +8,7 @@
   outline: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
+  list-style: circle;
 
 }
 
@@ -42,13 +42,25 @@ html {
   display: none;
 }
 
+.cover__services {
+  /* background-image: url(../src/assets/photos/bg4.jpg); */
+  background-color: #eee5e1;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.about__cover {
+  padding-top: 2rem;
+  background-image: url(../src/assets/photos/img1.jpg);
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--color-bg);
 
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  /* background-image: url(../src/assets/bg-texture.png); */
 
 }
 
@@ -71,19 +83,15 @@ h1 {
   font-size: 2.5rem;
 }
 
-section {
-  margin-top: 8rem;
-
-
-
-}
+section {}
 
 
 
 section>h2,
 section>h5 {
   text-align: center;
-  color: var(--color-light);
+  color: #5b4a42;
+  ;
 }
 
 section>h2 {
@@ -148,6 +156,11 @@ a:hover {
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
+
+  }
+
+  .app__profile {
+    display: none;
   }
 
   section>h2 {

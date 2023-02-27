@@ -1,8 +1,8 @@
 nav {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--color-black);
     width: max-content;
 
-    padding: 0.7rem 1.7rem;
+    padding: 1rem 1.7rem;
     z-index: 2;
     position: absolute;
     left: 50%;
@@ -16,15 +16,17 @@ nav {
 }
 
 nav a {
+
+    margin-top: 0.8rem;
     background: transparent;
-    padding: 0.9rem;
+
     border-radius: 50%;
     color: var(--color-light);
-    font-size: 1.1rem;
+    font-size: 2rem;
 }
 
 nav a:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--color-black);
 }
 
 nav a.active {
@@ -53,6 +55,7 @@ nav a.active {
 .app__navbar-logo img {
     width: 100px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .app__navbar-links {

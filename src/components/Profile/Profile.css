@@ -1,10 +1,10 @@
 .app__profile {
   left: 0;
-  margin-top: 8rem;
-  background-color: #e5ba9d;
+
+  background-color: #f7c89c;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 60% 1fr;
+  grid-template-columns: 1fr 80% 1fr;
 
   overflow: hidden;
 }
@@ -19,6 +19,7 @@
   grid-column: 2/ 3;
   overflow: hidden;
   gap: 2rem;
+
 
 }
 

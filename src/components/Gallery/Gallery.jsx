@@ -30,17 +30,18 @@ const Gallery = () => {
   return (
     <section className="section__gallery">
       <div className="app__gallery flex__center">
-        <div style={{ marginBottom: "1rem" }}>
-          <p className="p__cormorant">Lorem ipsum dolor sit amet.</p>
-          <img src={img} alt="spoon_image" className="spoon__img" />
-        </div>
         <div className="app__gallery-images">
           <div className="app__gallery-images_container" ref={scrollRef}>
             {[
-              images.gallery01,
-              images.gallery02,
-              images.gallery03,
-              images.gallery04,
+              images.img1,
+              images.img2,
+              images.img3,
+              images.img4,
+              images.img5,
+              images.img6,
+              images.img7,
+              images.img8,
+              images.img9,
             ].map((image, index) => (
               <div
                 className="app__gallery-images_card flex__center"

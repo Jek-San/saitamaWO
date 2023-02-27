@@ -1,8 +1,10 @@
 .about__container {
+
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
   place-items: center;
+  padding-bottom: 3rem;
 }
 
 .about__me {
